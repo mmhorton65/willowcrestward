@@ -1,32 +1,18 @@
-# React + TypeScript + Vite
+# Willow Crest Church Directory
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A lightweight, mobile-first ministry directory for Willow Crest Church. Attendees can scan a QR code or tap an NFC link to quickly find ministry information and the latest shared document.
 
-Currently, two official plugins are available:
+## Run locally
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```bash
+npm install
+npm run dev
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+Check the production build with `npm run build`.
+
+## Update organization content
+
+Edit the `organizations` array in [`src/data/organizations.ts`](src/data/organizations.ts). Each entry contains the organization name, category, description, icon, accent color, Google Doc preview URL, meeting time, and location. Use a Google Docs `/preview` URL for the embedded document.
+
+The app uses `/` for the home page and `/organization/:id` for each ministry detail page. Configure your production host to serve `index.html` for these routes.
