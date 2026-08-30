@@ -40,8 +40,9 @@ h2 { margin: 0; }
 .info-strip div { display: grid; gap: 5px; }
 .info-strip span { color: var(--muted); font: 10px 'DM Sans', sans-serif; letter-spacing: .12em; text-transform: uppercase; }
 .info-strip strong { font: 15px/1.3 'DM Sans', sans-serif; }
-.document-section { margin-bottom: 31px; width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; padding-inline: 20px; }
+.document-section { margin-bottom: 31px; margin-left: -20px; margin-right: -20px; padding-inline: 20px; }
 .document-frame { width: 100%; height: 66svh; min-height: 430px; overflow: hidden; border: 1px solid var(--line); background: #fff; }
+@media (min-width: 640px) { .document-section { margin-left: -40px; margin-right: -40px; padding-inline: 40px; } }
 .document-frame iframe { display: block; width: 100%; height: 100%; border: 0; }
 .embed-fallback { min-height: 220px; display: grid; align-content: center; padding: 30px; border: 1px solid var(--line); background: var(--cream); }
 .embed-fallback strong { margin-bottom: 8px; font: 700 18px 'Playfair Display', Georgia, serif; }
