@@ -14,7 +14,7 @@ export const organizations: Organization[] = [
   {
     id: 'sacrament-meeting', name: 'Sacrament Meeting Programs', category: 'Worship',
     description: 'Gather together each Sunday to worship, learn, and renew our faith.', icon: '✦', accentColor: '#c77b55',
-    googleDocUrl: 'https://docs.google.com/document/d/e/2PACX-1vTvSCmA9DsKCbL7h8ODe4XuEaWsKOnVHq6ckhxl5wabaUKcsXGqM4mgLB5CfZqE6tsUFARlmBVByJk9/pub', meetingTime: 'Sundays', 
+    googleDocUrl: 'https://docs.google.com/document/d/e/2PACX-1vTvSCmA9DsKCbL7h8ODe4XuEaWsKOnVHq6ckhxl5wabaUKcsXGqM4mgLB5CfZqE6tsUFARlmBVByJk9/pub?embedded=true', meetingTime: 'Sundays', 
     location: 'Chapel',
   },
   {
