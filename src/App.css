@@ -41,7 +41,7 @@ h2 { margin: 0; }
 .info-strip span { color: var(--muted); font: 10px 'DM Sans', sans-serif; letter-spacing: .12em; text-transform: uppercase; }
 .info-strip strong { font: 15px/1.3 'DM Sans', sans-serif; }
 .document-section { margin-bottom: 31px; }
-.document-frame { width: calc(100% + 80px); height: 66svh; min-height: 600px; overflow: hidden; border: 1px solid var(--line); background: #fff; margin-left: -40px; margin-right: -40px; }
+.document-frame { width: calc(100% + 80px); height: 66svh; min-height: 700px; overflow: hidden; border: 1px solid var(--line); background: #fff; margin-left: -40px; margin-right: -40px; }
 .document-frame iframe { display: block; width: 100%; height: 100%; border: 0; zoom: 0.9; transform-origin: top center; }
 @media (min-width: 640px) { .document-frame { width: calc(100% + 80px); margin-left: -40px; margin-right: -40px; } .document-frame iframe { zoom: 1; } }
 .document-frame iframe { display: block; width: 100%; height: 100%; border: 0; }
